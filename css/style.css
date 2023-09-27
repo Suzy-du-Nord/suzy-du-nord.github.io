@@ -1,15 +1,38 @@
 html {
+    /* background-image: url(../images/cherry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #222222;
+    font-family: 'Mooli', sans-serif;
+    color: white;
+}
+
+body {
     margin-left: 15%;
     margin-right: 15%;
 }
 
-.header {
-    padding: 60px;
+header {
+    padding: 30px;
     text-align: center;
     background: #1abc9c;
     color: white;
+    display: block;
 }
 
-#profile {
-    background-color: skyblue;
+header a text {
+    display: inline-flex;
+}
+
+header a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover, a:active {
+    color: rgb(225, 225, 225);
+}
+
+footer {
+    text-align: center;
 }
