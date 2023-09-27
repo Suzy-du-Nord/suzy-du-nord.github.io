@@ -12,8 +12,8 @@ rel="stylesheet">
 
 <header>
     <!--TODO: Add header links and make it nice n' fancy :)-->
-    <a href="../index">Home Sweet Home</a> | 
-    <a href="./index">Blog</a> | 
+    <a href="../">Home Sweet Home</a> | 
+    <a href="./">Blog</a> | 
     <a href="">University Projects</a> | 
     <a href="">Contact</a> | 
     <a href="">?</a>
