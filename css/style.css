@@ -34,10 +34,6 @@ header a:hover, a:active {
 }
 
 #profile-subsection-summary {
-    display: block;
-}
-
-#profile-subsection-summary div {
     display: inline-flex;
 }
 
