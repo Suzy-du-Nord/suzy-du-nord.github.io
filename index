@@ -12,7 +12,7 @@ rel="stylesheet">
 
 <header>
     <!--TODO: Add header links and make it nice n' fancy :)-->
-    <a href="./">Home Sweet Home</a> | 
+    <a href="">Home Sweet Home</a> | 
     <a href="./blog/">Blog</a> | 
     <a href="">University Projects</a> | 
     <a href="">Contact</a> | 
@@ -26,19 +26,21 @@ rel="stylesheet">
 </div>
 
 <div id="profile-section">
-    <div id="profile-image">
-        <img src="./images/me.jpg">
-    </div>
-    <div id="profile-info">
-        <h2>Ryan Iem</h2>
-        <h3>Working Holiday Maker in Japan</h3>
-        <p>I pride myself on being a reliable, hard-working and focused person who 
-            loves learning about new technologies and loves interacting with new 
-            people. My key interests include Cloud Computing, Networking and 
-            Programming (Web and Python)</p>
-        <p>Outside of work, I'm very interested in Japanese literature, music, 
-            coffee and cats 🐱
-        </p>
+    <div id="profile-subsection-summary">
+        <div id="profile-image">
+            <img src="./images/me.jpg">
+        </div>
+        <div id="profile-info">
+            <h2>Ryan Iem</h2>
+            <h3>Working Holiday Maker in Japan</h3>
+            <p>I pride myself on being a reliable, hard-working and focused person who 
+                loves learning about new technologies and loves interacting with new 
+                people. My key interests include Cloud Computing, Networking and 
+                Programming (Web and Python)</p>
+            <p>Outside of work, I'm very interested in Japanese literature, music, 
+                coffee and cats 🐱
+            </p>
+        </div>
     </div>
 </div>
 

@@ -33,6 +33,14 @@ header a:hover, a:active {
     color: rgb(225, 225, 225);
 }
 
+#profile-subsection-summary {
+    display: block;
+}
+
+#profile-subsection-summary div {
+    display: inline-flex;
+}
+
 footer {
     text-align: center;
 }
