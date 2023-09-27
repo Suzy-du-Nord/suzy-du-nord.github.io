@@ -22,7 +22,7 @@ rel="stylesheet">
 
 <div class="blog-entry">
 <h1>Blog</h1>
-    <hr class="solid">
+    <hr>
     <div class="blog-entry-header">
         <p>September 28, 2023</p>
     </div>
@@ -30,9 +30,9 @@ rel="stylesheet">
 </div>
 
 <footer>
-    <hr class="solid">
+    <hr>
     <p>Through this website, I hope to showcase my creative mind, programming 
-        knowledge, personal interests as well as share some insights into my 
+        knowledge and personal interests as well as share some insights into my 
         daily life in Japan 🎎
     </p>
     <small><i>The night is short—walk on, girl.</i></small>

@@ -33,8 +33,29 @@ header a:hover, a:active {
     color: rgb(225, 225, 225);
 }
 
-#profile-subsection-summary {
+#profile-section {
+    margin: 25px;
+}
+
+#profile-subsection-table {
     display: inline-flex;
+}
+
+#profile-info-td-image img {
+    height: 250px;
+    margin-right: 25px;
+}
+
+/* table {
+    border: 2px solid white;
+}
+
+table tr, td {
+    border: 2px solid white;
+} */
+
+#profile-education-td-bullet {
+    margin: 12.5px;
 }
 
 footer {
