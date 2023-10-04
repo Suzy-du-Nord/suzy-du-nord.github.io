@@ -2,9 +2,16 @@ html {
     /* background-image: url(../images/cherry.jpg);
     background-size: cover;
     background-repeat: no-repeat; */
-    background-color: #222222;
+    /* background-color: #222222; */
+    background-color: #E9F0EF;
     font-family: 'Mooli', sans-serif;
-    color: white;
+    color: #023E47;
+}
+
+hr {
+    color: #023E47;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
 }
 
 body {
@@ -41,18 +48,29 @@ header a:hover, a:active {
     display: inline-flex;
 }
 
+#profile-selection td {
+    width: 25%;
+    text-align: center;
+}
+
 #profile-info-td-image img {
     height: 250px;
     margin-right: 25px;
+    border-radius: 50%;
+    text-align: center;
 }
 
-/* table {
+table { /* for debugging */
     border: 2px solid white;
 }
 
-table tr, td {
+table tr, td { /* for debugging */
     border: 2px solid white;
-} */
+}
+
+.job-title {
+    margin-bottom: auto;
+}
 
 #profile-education-td-bullet {
     margin: 12.5px;
