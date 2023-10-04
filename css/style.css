@@ -12,7 +12,6 @@ hr {
     color: white;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
-    margin-top: 25px;
 }
 
 body {
@@ -27,32 +26,41 @@ header {
     display: block;
 }
 
+header hr {
+    margin-top: 25px;
+}
+
 header a text {
     display: inline-flex;
 }
 
-header a:link, a:visited {
+a:link, a:visited {
     color: white;
     text-decoration: none;
 }
 
-header a:hover, a:active {
+a:hover, a:active {
     color: rgb(225, 225, 225);
 }
 
 #profile-section {
-    margin: 0px 25px 25px 25px;
+    margin: 0px 25px 0px 25px;
 }
 
 #profile-subsection-table {
     display: inline-flex;
+    min-height: 550px;
 }
 
 #profile-info td {
+    padding-bottom: 25px;
+}
+
+#profile-topic td {
     padding-bottom: 15px;
 }
 
-#profile-selection td {
+#profile-topic td {
     width: 25%;
     text-align: center;
 }
@@ -71,15 +79,16 @@ header a:hover, a:active {
 
 /* 
 table { /* for debugging */
-    border: 2px solid white;
-}
+    /* border: 2px solid white;
+} */
 
-table tr, td { /* for debugging */
-    border: 2px solid white;
+/* table tr, td { /* for debugging */
+    /* border: 2px solid white;
 } */
 
 .job-title {
     margin-bottom: auto;
+    font-weight: bold;
 }
 
 #profile-education-td-bullet {
@@ -88,5 +97,5 @@ table tr, td { /* for debugging */
 
 footer {
     text-align: center;
-    margin-bottom: 25px;
+    margin: 10px 0px 25px 0px;
 }

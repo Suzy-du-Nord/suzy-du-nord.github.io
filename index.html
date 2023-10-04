@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home Sweet Home - Ryan Iem</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" 
+    <title>Home Sweet Home - Ryan Iem</title>
+    <script type="text/javascript" src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" 
 rel="stylesheet">
 </head>
 <body>
@@ -46,26 +47,27 @@ rel="stylesheet">
                 </p>
             </td>
         </tr>
-        <tr id="profile-selection">
+        <tr id="profile-topic">
             <td>
-                <h4>Experience</h4>
+                <a id="profile-topic-1" onclick="changeTopic(1)">Experience</a>
             </td>
             <td>
-                <h4>Education</h4>
+                <a id="profile-topic-2" onclick="changeTopic(2)">Education</a>
             </td>
             <td>
-                <h4>Skills & Interests</h4>
+                <a id="profile-topic-3" onclick="changeTopic(3)">Skills & Interests</a>
             </td>
             <td>
-                <h4>Volunteering</h4>
+                <a id="profile-topic-4" onclick="changeTopic(4)">Volunteering</a>
             </td>
         </tr>
-        <tr id="profile-experience-tr">
+        <tr id="profile-topic-content-1">
             <td colspan="4">
-                <h4 class="job-title">Cloud Engineer Intern</h4>
-                <small>National Australia Bank | Melbourne, Australia</small><br>
-                <small>Jan 2022 - Jun 2023</small>
-                <p>Rotation 2 - Cloud Migration Execution (CME)</p>
+                <h3>Experience</h3>
+                <p class="job-title">Cloud Engineer Intern</p>
+                <small>National Australia Bank</small><br>
+                <small>Jan 2022 - Jun 2023</small><br><br>
+                <small>Rotation 2 - Cloud Migration Execution (CME)</small><br>
                 <small>Aug 2022 to Jun 2023</small>
                 <ul>
                     <li>Assisted with the Cloud migration of multiple on-premise applications into Azure to further push NAB's cloud-first strategy</li>
@@ -84,15 +86,11 @@ rel="stylesheet">
                     <li>Hosted monthly bootcamp sessions showcasing Cloudability @ NAB and FinOps @ NAB</li>
                     <li>Provided technical support and assistance to asset teams (reg. Cloudability - NAB's cloud financial management platform)</li>
                 </ul>
-                <hr>
-                <h4 class="job-title">Customer Service Assistant</h4>
-                <small>Woolworths | Greater Melbourne Area, Australia</small><br>
-                <small>2018 - 2020</small>
             </td>
         </tr>
-        <tr id="profile-education-tr" style="display:none">
+        <tr id="profile-topic-content-2" style="display:none">
             <td colspan="4">
-                <h4>Education</h4>
+                <h3>Education</h3>
                 <p>RMIT University - Bachelor of Information Technology | 2019 - 2021</p>
                 <div id="profile-education-td-bullet">
                     <p>• Studied a mixed major involving Web & Mobile Computing, Security 
@@ -102,13 +100,16 @@ rel="stylesheet">
                 </div>
             </td>
         </tr>
-        <tr id="profile-skills-tr" style="display:none">
+        <tr id="profile-topic-content-3" style="display:none">
             <td colspan="4">
-                <hr>
-                <h4>Skills</h4>
-                <p>I'm rly good at uhhh</p>
+                <h3>Skills & Interests</h3>
+                <p>🤷‍♀️</p>
+            </td>
+        </tr>
+        <tr id="profile-topic-content-4" style="display:none">
+            <td colspan="4">
+                <h3>Volunteering</h3>
                 <p>..errr</p>
-                <hr>
             </td>
         </tr>
     </table>
