@@ -14,6 +14,18 @@ hr {
     border-style: solid;
 }
 
+#leaves img {
+    left: 0px;
+    position: fixed; 
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: 125%; 
+    opacity: 10%;
+    z-index: 1;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
 body {
     margin-top: unset;
     margin-left: 15%;
@@ -21,20 +33,16 @@ body {
 }
 
 header {
-    padding: 15px 0px 0px 0px;
+    padding-top: 5px;
     text-align: center;
     display: block;
     background-color: #222222;
-}
-
-#header-name h2 {
-    margin-bottom: 5px;
+    top: 0px;
+    position: sticky;
 }
 
 #header-links {
-    top: 0;
-    position: sticky;
-    padding: 15px 0px 15px 0px;
+    padding: 0px 0px 1px 0px;
 }
 
 header a text {
@@ -54,13 +62,18 @@ a:hover, a:active {
     color: rgb(225, 225, 225);
 }
 
+#about {
+    /* padding-top: 500px; */
+    display: inline-block;
+}
+
 #profile-section {
     margin: 0px 25px 0px 25px;
 }
 
 #profile-subsection-table {
     display: inline-flex;
-    min-height: 850px;
+    min-height: 800px;
 }
 
 #profile-info td {
@@ -110,10 +123,13 @@ table { /* for debugging */
     margin: 12.5px;
 }
 
+#contact-section {
+    min-height: 400px;
+}
+
 footer {
     text-align: center;
-    margin: 10px 0px 0px 0px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     position: fixed;
     bottom: 0px;
     background-color: #222222;
@@ -121,4 +137,5 @@ footer {
 
 #footer-hr {
     width: 1064px;
+    margin-top: 10px;
 }
