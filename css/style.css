@@ -21,17 +21,28 @@ body {
 }
 
 header {
-    padding: 30px 0px 15px 0px;
+    padding: 15px 0px 0px 0px;
     text-align: center;
     display: block;
+    background-color: #222222;
 }
 
-header hr {
-    margin-top: 25px;
+#header-name h2 {
+    margin-bottom: 5px;
+}
+
+#header-links {
+    top: 0;
+    position: sticky;
+    padding: 15px 0px 15px 0px;
 }
 
 header a text {
     display: inline-flex;
+}
+
+header hr {
+    margin-top: 25px;
 }
 
 a:link, a:visited {
@@ -49,7 +60,7 @@ a:hover, a:active {
 
 #profile-subsection-table {
     display: inline-flex;
-    min-height: 550px;
+    min-height: 850px;
 }
 
 #profile-info td {
@@ -74,7 +85,7 @@ a:hover, a:active {
 }
 
 #profile-info-td-title {
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
 /* 
@@ -91,11 +102,23 @@ table { /* for debugging */
     font-weight: bold;
 }
 
+.topic-hr {
+    border-style: dotted;
+}
+
 #profile-education-td-bullet {
     margin: 12.5px;
 }
 
 footer {
     text-align: center;
-    margin: 10px 0px 25px 0px;
+    margin: 10px 0px 0px 0px;
+    padding-bottom: 25px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #222222;
+}
+
+#footer-hr {
+    width: 1064px;
 }
