@@ -11,6 +11,9 @@ rel="stylesheet">
 <body>
 
 <header>
+    <div id="name">
+        <h2>Ryan Iem</h2>
+    </div>
     <!--TODO: Add header links and make it nice n' fancy :)-->
     <a href="">Home Sweet Home</a> | 
     <a href="./blog/">Blog</a> | 
@@ -18,6 +21,7 @@ rel="stylesheet">
     <a href="">Contact</a> | 
     <a href="">?</a>
     <a><!--LinkedIn icon on right--></a>
+    <hr>
 </header>
 
 <div id="profile-section">
@@ -27,11 +31,10 @@ rel="stylesheet">
                 <img src="./images/me.jpg">
             </td>
             <td colspan="4" id="profile-info-td-text">
-                <h2>Ryan Iem</h2>
-                <h3>Working Holiday Maker in Japan</h3>
+                <h3 id="profile-info-td-title">Working Holiday Maker in Japan</h3>
                 <p>I pride myself on being a reliable, hard-working and focused person who 
                     loves learning about new technologies and loves interacting with new 
-                    people. My key interests include Cloud Computing, Networking and 
+                    people. My key interests include Cloud Computing, Networking (Cisco) and 
                     Programming (Web and Python).</p>
                 <p>Currently, I am spending a year in Japan to improve my Japanese, immerse 
                     myself in the culture, and experience a completely different working culture. 
@@ -51,15 +54,14 @@ rel="stylesheet">
                 <h4>Education</h4>
             </td>
             <td>
-                <h4>Volunteering</h4>
+                <h4>Skills & Interests</h4>
             </td>
             <td>
-                <h4>Skills & Interests</h4>
+                <h4>Volunteering</h4>
             </td>
         </tr>
         <tr id="profile-experience-tr">
             <td colspan="4">
-                <hr>
                 <h4 class="job-title">Cloud Engineer Intern</h4>
                 <small>National Australia Bank | Melbourne, Australia</small><br>
                 <small>Jan 2022 - Jun 2023</small>
@@ -88,16 +90,7 @@ rel="stylesheet">
                 <small>2018 - 2020</small>
             </td>
         </tr>
-        <tr id="profile-skills-tr">
-            <td colspan="4">
-                <hr>
-                <h4>Skills</h4>
-                <p>I'm rly good at uhhh</p>
-                <p>..errr</p>
-                <hr>
-            </td>
-        </tr>
-        <tr id="profile-education-tr">
+        <tr id="profile-education-tr" style="display:none">
             <td colspan="4">
                 <h4>Education</h4>
                 <p>RMIT University - Bachelor of Information Technology | 2019 - 2021</p>
@@ -109,15 +102,24 @@ rel="stylesheet">
                 </div>
             </td>
         </tr>
+        <tr id="profile-skills-tr" style="display:none">
+            <td colspan="4">
+                <hr>
+                <h4>Skills</h4>
+                <p>I'm rly good at uhhh</p>
+                <p>..errr</p>
+                <hr>
+            </td>
+        </tr>
     </table>
 </div>
 
 <footer>
     <hr class="solid">
-    <p>Through this website, I hope to showcase my creative mind, programming 
+    <small>Through this website, I hope to showcase my creative mind, programming 
         knowledge and personal interests as well as share some insights into my 
-        daily life in Japan 🎎
-    </p>
+        daily life in Japan
+    </small><br><br>
     <small><i>The night is short—walk on, girl.</i></small>
 </footer>
 
