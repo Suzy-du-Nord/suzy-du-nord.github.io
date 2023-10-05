@@ -6,6 +6,7 @@ html {
     /* background-color: #E9F0EF; */
     font-family: 'Mooli', sans-serif;
     color: white;
+    overflow-y: hidden;
 }
 
 #about {
