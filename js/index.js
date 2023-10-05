@@ -1,6 +1,15 @@
 let defaultTopicSelection = 1
 
 // alert("hehe");
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+function setup() {
+    for (i = 1; i <= 4; i++) {
+        document.getElementById("profile-topic-" + i).style = "cursor: pointer";
+    }
+}
 
 function changeTopic(selection) {
     for (i = 1; i <= 4; i++) {
@@ -12,4 +21,5 @@ function changeTopic(selection) {
     document.getElementById("profile-topic-content-" + selection).style = "display: ''";
 }
 
-changeTopic(1);
+setup();
+// changeTopic(1);

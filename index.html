@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
+<div id="about"></div>
 <head>
     <title>Home Sweet Home</title>
     <script type="text/javascript" src="./js/index.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" 
-rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
 </head>
 
+<div id="leaves">
+    <img src="./images/leaves.png">
+</div>
+
 <body>
-    <div id="leaves">
-        <img src="./images/leaves.png">
-    </div>
 <header>
-    <div id="header-name">
-        <h2>Ryan Iem</h2>
+    <div id="header-title">
+        <div id="name">
+            <h1>Ryan Iem</h1>
+        </div>
     </div>
     <div id="header-links">
-        <a href="#about">About Me</a> | 
+        <a href="#about">私</a> | 
         <a href="#projects">Projects</a> | 
         <a href="./blog/">Blog</a> | 
         <a href="#contact">Contact</a> | 
         <a href="">?</a>
-        <hr>
     </div>
+    <hr id="header-hr">
 </header>
 
-<div id="about"></div>
 <div id="profile-section">
     <table id="profile-subsection-table">
         <tr id="profile-info">
@@ -36,7 +38,7 @@ rel="stylesheet">
                 <img src="./images/me.jpg">
             </td>
             <td colspan="4" id="profile-info-td-text">
-                <h3 id="profile-info-td-title">Working Holiday Maker in Japan</h3>
+                <h3 id="profile-info-td-title">Graduate Cloud Engineer</h3>
                 <p>I pride myself on being a reliable, hard-working and focused person who 
                     loves learning about new technologies and loves interacting with new 
                     people. My key interests include Cloud Computing, Networking (Cisco) and 
@@ -49,23 +51,24 @@ rel="stylesheet">
                 <small>Outside of work, I'm very interested in Japanese literature, music, 
                     coffee and cats 🐱
                 </small>
+                <div id="resume"></div>
             </td>
         </tr>
         <tr id="profile-topic">
             <td>
-                <a id="profile-topic-1" onclick="changeTopic(1)">Experience</a>
+                <a href="#resume" id="profile-topic-1" onclick="changeTopic(1)">Experience</a>
             </td>
             <td>
-                <a id="profile-topic-2" onclick="changeTopic(2)">Education</a>
+                <a href="#resume" id="profile-topic-2" onclick="changeTopic(2)">Education</a>
             </td>
             <td>
-                <a id="profile-topic-3" onclick="changeTopic(3)">Skills & Interests</a>
+                <a href="#resume" id="profile-topic-3" onclick="changeTopic(3)">Skills & Interests</a>
             </td>
             <td>
-                <a id="profile-topic-4" onclick="changeTopic(4)">Volunteering</a>
+                <a href="#resume" id="profile-topic-4" onclick="changeTopic(4)">Volunteering</a>
             </td>
         </tr>
-        <tr id="profile-topic-content-1">
+        <tr id="profile-topic-content-1" style="display:none">
             <td colspan="4">
                 <p class="topic-title">Cloud Engineer Intern</p>
                 <small>National Australia Bank</small><br>
@@ -111,7 +114,7 @@ rel="stylesheet">
                         </ul>
                         <li>Minor in Cisco Networking</li>
                     </ul>
-                </small><hr class="topic-hr">
+                </small>
                 <p class="topic-title">Certifications</p>
                 <small>
                     <ul>
@@ -168,7 +171,7 @@ rel="stylesheet">
                         <li>Took coffee and other beverage orders and prepared them for customers quickly and effectively</li>
                         <li>Assisted kitchen staff in preparing various food items</li>
                     </ul>
-                </small><hr class="topic-hr">
+                </small>
                 <p class="topic-title">Festival Volunteer</p>
                 <small>Melbourne Japanese Summer Festival</small><br>
                 <small>Feb 2019</small>

@@ -8,6 +8,11 @@ html {
     color: white;
 }
 
+#about {
+    height: unset;
+    width: unset;
+}
+
 hr {
     color: white;
     border-width: 0px 0px 1px 0px;
@@ -15,42 +20,73 @@ hr {
 }
 
 #leaves img {
+    opacity: 10%;
     left: 0px;
     position: fixed; 
     min-width: 100%;
     min-height: 100vh;
     max-height: 125%; 
-    opacity: 10%;
     z-index: 1;
     overflow-x: hidden;
     pointer-events: none;
+    animation: fadeInAnimationLeaves ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInAnimationLeaves {
+    0% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 10%;
+     }
 }
 
 body {
     margin-top: unset;
     margin-left: 15%;
     margin-right: 15%;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 header {
     padding-top: 5px;
-    text-align: center;
-    display: block;
     background-color: #222222;
     top: 0px;
     position: sticky;
 }
 
+#header-title {
+    display: inline-block;
+    margin: 0px;
+}
+
 #header-links {
     padding: 0px 0px 1px 0px;
+    left: 75%;
+    top: 40%;
+    position: absolute;
 }
 
 header a text {
     display: inline-flex;
 }
 
-header hr {
-    margin-top: 25px;
+#header-hr {
+    display: block;
 }
 
 a:link, a:visited {
@@ -62,13 +98,8 @@ a:hover, a:active {
     color: rgb(225, 225, 225);
 }
 
-#about {
-    /* padding-top: 500px; */
-    display: inline-block;
-}
-
 #profile-section {
-    margin: 0px 25px 0px 25px;
+    margin: 7.5% 25px 0px 25px;
 }
 
 #profile-subsection-table {
@@ -77,14 +108,15 @@ a:hover, a:active {
 }
 
 #profile-info td {
+    padding-bottom: 8%;
+}
+
+#resume {
     padding-bottom: 25px;
 }
 
 #profile-topic td {
     padding-bottom: 15px;
-}
-
-#profile-topic td {
     width: 25%;
     text-align: center;
 }
