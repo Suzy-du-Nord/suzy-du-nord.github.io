@@ -156,8 +156,10 @@ table { /* for debugging */
     margin: 12.5px;
 }
 
+/* this will all need to be updated */
 #contact-section {
     min-height: 400px;
+    text-align: center;
 }
 
 footer {
