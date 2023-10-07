@@ -27,8 +27,11 @@ function changeTopic(selection) {
         document.getElementById("profile-topic-" + i).style = "cursor: pointer";
         document.getElementById("profile-topic-content-" + i).style = "display: none";
     }
-    document.getElementById("profile-topic-" + selection).style = "text-decoration: underline; cursor: pointer;";
-    document.getElementById("profile-topic-content-" + selection).style = "display: ''";
+
+    if (selection != 0) {
+        document.getElementById("profile-topic-" + selection).style = "text-decoration: underline; cursor: pointer;";
+        document.getElementById("profile-topic-content-" + selection).style = "display: ''";
+    }
 }
 
 setup();
