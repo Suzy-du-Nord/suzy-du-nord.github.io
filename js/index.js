@@ -15,6 +15,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+window.addEventListener("load", function() {
+    const form = document.getElementById('form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        // We just need to stay on the same page :)
+        document.getElementById("form-message").innerText = "Thanks for your interest!";
+        alert("Success!");
+      })
+    });
+  });
+
 function setup() {
     for (i = 1; i <= 4; i++) {
         document.getElementById("profile-topic-" + i).style = "cursor: pointer";

@@ -156,10 +156,59 @@ table { /* for debugging */
     margin: 12.5px;
 }
 
-/* this will all need to be updated */
-#contact-section {
-    min-height: 400px;
+.top-button {
     text-align: center;
+}
+
+/* this will all need to be updated */
+#contact {
+    padding-bottom: 400px;
+}
+
+/* TODO: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap/Basic_concepts */
+
+#contact-section {
+    border: 1px solid;
+    margin: 0px 12.5% 0 12.5%;
+}
+
+/* flex example */
+#contact-section-row { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact-info {
+    border: 1px solid;
+    display: inline-block;
+}
+
+#contact-form {
+    border: 1px solid;
+    min-width: 500px;
+    display: inline-block;
+    text-align: right;
+}
+
+#contact-form input, textarea {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    color: white;
+    background-color: #333333;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 2px;
+    font-family: 'Mooli', sans-serif;
+}
+
+#contact-form button {
+    color: white;
+    background-color: #252B30;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 2px;
 }
 
 footer {

@@ -2,7 +2,7 @@
 <html>
 <div id="about"></div>
 <head>
-    <title>Home Sweet Home</title>
+    <title>Ryan Iem</title>
     <script type="text/javascript" src="./js/index.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +26,7 @@
         <a href="#about" onclick="changeTopic(0)">私</a> | 
         <a href="#projects">Projects</a> | 
         <a href="./blog/">Blog</a> | 
-        <a href="#contact">Contact</a> | 
+        <a href="#contact" onclick="changeTopic(0)">Contact</a> | 
         <a href="">?</a>
     </div>
     <hr id="header-hr">
@@ -186,6 +186,7 @@
         </tr>
     </table>
     <!-- <hr> -->
+    <p class="top-button"><a href="#about" onclick="changeTopic(0)">Top</a></p>
 </div>
 
 <!-- <div id="projects"></div>
@@ -204,16 +205,23 @@
 
 <div id="contact"></div>
 <div id="contact-section">
-    <div id="contact-info">
-        <p><a href="#about" onclick="changeTopic(0)">Top</a></p>
+    <div id="contact-section-row">
+        <div id="contact-info">
+            <p>ryan.iem12@gmail.com</p>
+            <p>0423 053 370</p>
+            <p><a href="https://www.linkedin.com/in/ryan-iem/">Ryan Iem</a></p>
+            <p><a href="https://github.com/ryan-iem">ryan-iem</a></p>
+        </div>
+        <div id="contact-form">
+            <form id="form" method="POST" action="https://script.google.com/macros/s/AKfycbyTsRzCO2Vh4-ao3XoVC063Xca_ikNq4PijDDJntj7Fn--XIyug3-RtVjJzQhRda0ul/exec">
+                <input name="Name" type="text" placeholder="Name" required><br>
+                <input name="Email" type="email" placeholder="Email" required><br>
+                <textarea id="form-message" name="Message" type="text" placeholder="Message" rows="6" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-    <!-- <div id="contact-form">
-        <form>
-            <input>
-        </form>
-    </div> -->
 </div>
-
 <footer>
     <hr id="footer-hr">
     <small>This website exists to showcase my creative mind, programming 
