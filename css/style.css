@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     /* background-image: url(../images/cherry.jpg);
     background-size: cover;
@@ -63,6 +67,24 @@ body {
      }
 }
 
+/* .container {
+
+} */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* .sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
 header {
     padding-top: 5px;
     background-color: #222222;
@@ -73,21 +95,18 @@ header {
 #header-name {
     display: inline-block;
     margin: 0px;
+    position: left;
 }
 
-#header-links {
-    padding: 0px 0px 1px 0px;
-    left: 75%;
-    top: 40%;
-    position: absolute;
+#header-col-1 {
+    margin: 0.5%;
+    flex-basis: 30%;
 }
 
-header a text {
-    display: inline-flex;
-}
-
-#header-hr {
-    display: block;
+#header-col-2 {
+    margin: 3%;
+    text-align: right;
+    flex-basis: 60%;
 }
 
 a:link, a:visited {
@@ -122,12 +141,25 @@ a:hover, a:active {
     text-align: center;
 }
 
-#profile-info-td-image img {
+#about-col-1 {
+    margin-left: 5%;
+    padding: 2%;
+    flex-basis: 30%;
+}
+
+#about-col-1 img {
+    width: auto;
     height: 250px;
-    margin-right: 25px;
     border-radius: 50%;
     text-align: center;
     border-style: dotted;
+}
+
+#about-col-2 {
+    margin-top: 1%;
+    margin-right: 5%;
+    padding: 2%;
+    flex-basis: 60%;
 }
 
 #profile-info-td-title {

@@ -16,29 +16,30 @@
 </div>
 
 <body>
-<header>
-    <div id="header-name">
-        <div id="name">
+<header class="container">
+    <div class="row">
+        <div id="header-col-1">
             <h1><a href="#about" onclick="changeTopic(0)">Ryan Iem</a></h1>
         </div>
+        <div id="header-col-2">
+            <a href="#about" onclick="changeTopic(0)">私</a> | 
+            <!-- <a href="#projects">Projects</a> |  -->
+            <!-- <a href="">Blog</a> |  -->
+            <!-- <a href="./murakami/index.html">村上さんのところ</a> |  -->
+            <a href="#contact" onclick="changeTopic(0)">Contact</a> | 
+            <a href="">?</a>
+        </div>
     </div>
-    <div id="header-links">
-        <a href="#about" onclick="changeTopic(0)">私</a> | 
-        <a href="#projects">Projects</a> | 
-        <a href="./blog/">Blog</a> | 
-        <a href="#contact" onclick="changeTopic(0)">Contact</a> | 
-        <a href="">?</a>
-    </div>
-    <hr id="header-hr">
 </header>
+<hr id="header-hr">
 
-<div id="profile-section">
-    <table id="profile-subsection-table">
-        <tr id="profile-info">
-            <td id="profile-info-td-image">
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div id="about-col-1">
                 <img src="./images/me.jpg">
-            </td>
-            <td colspan="4" id="profile-info-td-text">
+            </div>
+            <div id="about-col-2">
                 <h3 id="profile-info-td-title">Graduate Cloud Engineer</h3>
                 <p>I pride myself on being a reliable, hard-working and focused person who 
                     loves learning about new technologies and loves interacting with new 
@@ -53,8 +54,10 @@
                     coffee and cats 🐱
                 </small>
                 <div id="resume"></div>
-            </td>
-        </tr>
+            </div>
+        </div>
+
+
         <tr id="profile-topic">
             <td>
                 <a href="#resume" id="profile-topic-1" onclick="changeTopic(1)">Experience</a>
@@ -184,7 +187,7 @@
                 </small>
             </td>
         </tr>
-    </table>
+    </div>
     <!-- <hr> -->
     <p class="top-button"><a href="#about" onclick="changeTopic(0)">Top</a></p>
 </div>
